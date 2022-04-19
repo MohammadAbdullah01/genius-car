@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
@@ -14,7 +15,7 @@ const Service = ({ service }) => {
             <h3>{name}</h3>
             <p>{price}</p>
             <p>{description}</p>
-            <button onClick={() => handleNavigateToServiceDetails(id)}>Book: {name}</button>
+            <Button onClick={() => handleNavigateToServiceDetails(id)}>Book: {name}</Button>
         </div>
     );
 };

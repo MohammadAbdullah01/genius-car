@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { ToastContainer } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import Banner from '../Banner/Banner';
 import Experts from '../Experts/Experts';
 import Services from '../Services/Services';
@@ -7,9 +8,13 @@ import Services from '../Services/Services';
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home - Genius Car Service</title>
+            </Helmet>
             <Banner></Banner>
             <Services></Services>
             <Experts></Experts>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.form-container input {
+.form-container input:not([type=checkbox]) {
     display: block;
     margin-bottom: 15px;
     width: 100%;
